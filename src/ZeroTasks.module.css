@@ -1,0 +1,24 @@
+.zeroTasks {
+    border-top: 1px solid var(--gray-300);
+    border-radius: 8px;
+    padding: 3rem;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .content img {
+    padding-bottom: 0.5rem;
+  }
+
+  .light {
+    color: var(--gray-300);
+  }
+
+  .content span:first-of-type {
+    color: var(--gray-200);
+  }

@@ -1,0 +1,87 @@
+.labels {
+    border: 1px solid var(--gray-400);
+    border-radius: 8px;
+    background: var(--gray-500);
+    padding: 1rem;
+    color: var(--gray-200);
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.done {
+    line-height: 2rem;
+    font-size: 1rem;
+    color: var(--gray-200);
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.noDone {
+    line-height: 2rem;
+    font-size: 1rem;
+    color: var(--gray-200);
+}
+
+.check {
+    margin-right: 0.8rem;
+    appearance: none;
+    background: var(--gray-500);
+    border: 2px solid var(--green-500);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    box-shadow: none !important;
+    list-style-type: none;
+
+    transition: border 0.1s;
+}
+
+.check:hover {
+    border: 2px solid var(--green);
+}
+
+.check:checked {
+    background-image: url("data:image/svg+xml,%3Csvg width='15' height='13' viewBox='-3 -4 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.43059 0.342137L4.09865 4.67408L1.61618 2.19161L0.780273 3.02751L4.09865 6.34589L9.26649 1.17804L8.43059 0.342137Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-color: var(--greenDark);
+    border: none;
+    box-shadow: none;
+
+    transition: background-color 0.1s;
+}
+
+.check:checked:hover {
+    background-color: var(--green-500);
+}
+
+.content {
+    margin: 0 auto;
+    display: flex;
+    max-width: 46rem;
+    flex-direction: column;
+    border-radius: 8px;
+    max-width: 46rem;
+    width: 100%;
+}
+
+.content ol li button {
+    background: transparent;
+    border: 0;
+    color: var(--gray-300);
+    cursor: pointer;
+}
+
+.trash {
+    color: var(--danger);
+    transition: color 0.2s;
+}
+
+.trash:hover {
+    color: var(--red);
+}
+
